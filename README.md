@@ -1,9 +1,11 @@
 Building a Docker-Jenkins CI/CD Pipeline for a Python App !!
 
-Introduction
+Introduction:
+
 In this article, we will look at how we can deploy an app using a CI/CD pipeline involving git, GitHub, Jenkins, Docker and DockerHub. The basic premise is that when a code update is pushed to git, it will get updated on GitHub. Jenkins will then pull this update, build the Docker Image from a Dockerfile and Jenkinsfile configuration, push it to Docker Hub as a registry store, and then pull it and run it as a container to deploy our app.
 
-Prerequisites
+Prerequisites:
+
 We will use a Python app for this tutorial. The sample app will be included in the GitHub repo.
 GitHub account to sync our local repo and connect with Jenkins.
 Docker Hub account. If you do not already have one, you can create it at hub.docker.com
@@ -13,7 +15,8 @@ First we will check if Java is installed and what version is it.
 java -version
 command : sudo apt-get install -y openjdk-11-jre
 
-Installing Git
+Installing Git:
+
 Git will help us in maintaining and versioning our code in an efficient manner.
 
 First let us check if Git is already available in our system or not.
